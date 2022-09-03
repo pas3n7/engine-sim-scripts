@@ -42,3 +42,6 @@ $mainassetfile = $(Get-Location).Path + "\assets\main.mr"
 #but this does.
 $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
 [System.IO.File]::WriteAllLines($mainassetfile, $mainfile, $Utf8NoBomEncoding)
+
+#launch engine sim
+start-process .\bin\engine-sim-app.exe -WorkingDirectory .\bin
