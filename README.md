@@ -5,3 +5,4 @@ https://github.com/ange-yaghi/engine-sim
 engineswap.ps1
 A script to make swapping between engines easier
 Run it, select a number, then launch Engine Sim
+P.S. others have done this better: https://github.com/ange-yaghi/engine-sim/wiki/Community-projects
