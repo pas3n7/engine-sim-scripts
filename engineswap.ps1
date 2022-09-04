@@ -16,7 +16,7 @@ $choice = $choice -as [int]
 $engine = $engines[$choice]
 
 $enginefile = Get-content -raw $engine
-$enginefile -match "(?<=public node ).*(?= {[^}]*alias output __out: engine;[^}]*})" | out-null
+$enginefile -match "(?<=public node ).*(?=\n*{[^}]*alias output __out: engine;[^}]*})" | out-null
 
 try {$matches.count -eq 1}
 catch { "regex matches != 1"}
